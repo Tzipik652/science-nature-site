@@ -1,0 +1,25 @@
+@keyframes textBigger {
+    0% {
+        font-size: 1rem;
+    }
+    100% {
+        font-size: 1.1rem;
+    }
+}
+.accordion-button {
+        transition: font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-button:hover {
+        font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0b2545;
+    color: #fff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+    background-color: #0b254553;
+}
