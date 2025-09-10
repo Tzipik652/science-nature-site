@@ -1,0 +1,82 @@
+.animated-text {
+    padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(-45deg, #3eddb1, #b3d52a, #18192d, #3eddb1);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+.carousel-caption {
+  text-shadow: 4px 4px 6px rgba(0.9, 0.7, 0.6, 0.7);
+}
+.info-boxes {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* כרטיס בודד */
+.info-card {
+  display: block;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* טקסט בכרטיס */
+.card-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0b2545;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #3b4a5a;
+  line-height: 1.4;
+}
+
+/* hover */
+.info-card:hover,
+.info-card:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  outline: none;
+  opacity: 0.90;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
