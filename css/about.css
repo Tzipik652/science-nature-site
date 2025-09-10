@@ -1,0 +1,28 @@
+[class^="about-"] {
+    color: #ffffff;
+    padding: 0 10px;
+}
+.manager-img {
+  float: left; 
+  margin: 0 10px 10px 0; 
+  width: 100px;
+  height: auto;
+}
+.math-img {
+  float: right; 
+  margin: 0 0 10px 10px; 
+  width: 300px;
+  height: auto;
+}
+#readMoreBtn{
+    background-color: white;
+    color: #0b2545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#readMoreBtn:hover {
+    opacity: 0.8;
+}
