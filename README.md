@@ -1,4 +1,4 @@
-# Wonder Science – Educational Website
+# Science Nature – Educational Website
 
 **Wonder Science** is a professional, responsive website showcasing scientific and natural topics.  
 The project emphasizes **UI/UX best practices**, interactive features, and clear, accessible presentation.
