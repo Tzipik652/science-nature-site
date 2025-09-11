@@ -9,7 +9,6 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/style.css" />
-
     <title>Science & Nature</title>
   </head>
   <body>
@@ -36,7 +35,21 @@
         Welcome to "Science & Nature" <br />
         Discover the wonders of our world!
       </h1>
-      <div id="scienceCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="d-block d-md-none">
+        <img
+          src="../images/forest.png"
+          alt="Green Forest"
+          class="mobile-carousel-image"
+        />
+        <div class="mobile-carousel-caption">
+          Life & Nature – Plants, animals, and ecosystems around the globe.
+        </div>
+      </div>
+      <div
+        id="scienceCarousel"
+        class="carousel slide d-none d-md-block"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
           <button
             type="button"

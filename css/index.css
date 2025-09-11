@@ -73,7 +73,24 @@
   opacity: 0.9;
 }
 @media (max-width: 768px) {
-  .carousel-item img {
+  
+  .animated-text{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+  .mobile-carousel-image {
     height: 250px;
+width: 100%;
+  }
+  .mobile-carousel-caption {
+    font-size: 0.9rem;
+    z-index: 10;
+    color: white;
+    text-shadow:4px 4px 6px rgba(0.9, 0.7, 0.6, 0.7);
+    text-align: center;
+    position: relative;
+    top:-50px;
+    width: 50%;
+    margin: 0 auto;
   }
 }
