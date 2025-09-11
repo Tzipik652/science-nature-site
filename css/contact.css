@@ -17,3 +17,8 @@ form h2{
     background-color: #34b89e;
     color: white;
 }
+@media (max-width: 768px) {
+    form{
+        width: 90%;
+    }
+}
