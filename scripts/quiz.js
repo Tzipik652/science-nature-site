@@ -85,6 +85,7 @@ const quizData = [
 
 let currentQuestion = 0;
 let score = 0;
+const quizContainer = document.getElementById("quiz-container");
 
 function showQuestion() {
   const q = quizData[currentQuestion];
@@ -104,9 +105,18 @@ function showQuestion() {
 function selectAnswer(correct, btn) {
   if (correct) {
     btn.classList.add("correct");
-    score += 20;
+    score += 10;
   } else {
     btn.classList.add("wrong");
+    Array.from(btn.parentElement.children).forEach((b) => {
+      if (
+        quizData[currentQuestion].answers.find(
+          (a) => a.text === b.textContent && a.correct
+        )
+      ) {
+        b.classList.add("correct-answer");
+      }
+    });
   }
 
   Array.from(btn.parentElement.children).forEach((b) => (b.disabled = true));
@@ -117,9 +127,13 @@ function selectAnswer(correct, btn) {
     if (currentQuestion < quizData.length) {
       showQuestion();
     } else {
-      document.getElementById(
-        "quiz-container"
-      ).innerHTML = `<h2 class="score">Quiz Finished!</h2><p class="score">Your score: ${score}/100</p>`;
+      quizContainer.innerHTML = `<h2 class="score">Quiz Finished!</h2><p class="score">Your score: ${Math.floor(
+        (score / quizData.length) * 10
+      )}%</p>
+      <div class="d-flex justify-content-center">
+        <a href="quiz.html" class="btn btn-primary center-btn restart-quiz">Restart Quiz</a>
+      </div>
+`;
     }
   }, 800);
 }
@@ -130,12 +144,15 @@ function updateProgressBar() {
   console.log(progressBar, progressBarText);
   const progressPercent = ((currentQuestion + 1) / quizData.length) * 100;
   progressBar.style.width = progressPercent + "%";
-  if(currentQuestion < quizData.length){
-    progressBarText.textContent = `Question ${currentQuestion+1} of ${quizData.length}`;
-  }else{
+  if (currentQuestion < quizData.length) {
+    progressBarText.textContent = `Question ${currentQuestion + 1} of ${
+      quizData.length
+    }`;
+    document.getElementById("score").textContent = "Score: " + score;
+  } else {
     progressBarText.textContent = `Quiz Completed!`;
+    document.getElementById("score").textContent = "";
   }
-  document.getElementById("score").textContent = "Score: " + score;
 }
 
 showQuestion();

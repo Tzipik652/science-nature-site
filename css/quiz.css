@@ -46,6 +46,22 @@
   background-color: #e1306c;
   color: #18192d;
 }
+
+@keyframes correctAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(62, 221, 177, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 20px 10px rgba(62, 221, 177, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(62, 221, 177, 0);
+  }
+}
+.answer-btn.correct-answer {
+  border: #3eddb1 2px solid;
+  animation: correctAnimation 0.6s ease-out;
+}
 #progress-container {
   width: 60%;
   background-color: #3e3f59;
@@ -55,22 +71,29 @@
   height: 20px;
   margin: 1rem auto;
 }
-
 #progress-bar {
   width: 0%;
   height: 100%;
   background-color: #3eddb1;
   transition: width 0.3s ease;
+  position: relative;
 }
-#progress-bar-text{
-    margin: 0 auto;
-    text-align: center;
-    color: #3eddb1;
+
+#progress-bar-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: #18192D 1px 1px 2px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
 }
 #score{
     margin: auto;
     text-align: center;
-    font-size: 1.25rem;
     font-weight: bold;
     color: #3eddb1;
 }
@@ -80,6 +103,16 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: #3eddb1;
+}
+.restart-quiz {
+  background-color: #3EDCB1;
+  color: #18192D;
+  text-decoration: none;
+  border: none;
+}
+.restart-quiz:hover {
+  background-color: #1d6758;
+  color: white;
 }
 
 @media (max-width: 480px) {
