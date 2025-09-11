@@ -67,7 +67,6 @@ header .logo p {
   border-bottom: 2px solid #b3d52a;
 }
 
-/* רספונסיביות */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -92,7 +91,7 @@ header .logo p {
   }
 
   .nav-menu.open {
-    max-height: 500px; /* מספיק לכל הלינקים */
+    max-height: 500px;
   }
 
   .nav-menu ul {
@@ -138,7 +137,6 @@ footer::before {
   pointer-events: none;
 }
 
-/* Copyright text */
 footer p {
   text-align: center;
   margin: 5px 0 15px 0;
@@ -150,7 +148,6 @@ footer p {
   z-index: 1000;
 }
 
-/* Social Icons Container */
 .social-icons-minimal {
   display: flex;
   justify-content: center;
@@ -162,7 +159,6 @@ footer p {
   z-index: 1;
 }
 
-/* Individual Social Icons */
 .social-icon-minimal {
   width: 50px;
   height: 50px;
@@ -179,7 +175,6 @@ footer p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effects for All Icons */
 .social-icon-minimal:hover {
   transform: translateY(-5px) scale(1.05);
   border-color: currentColor;
@@ -187,7 +182,6 @@ footer p {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Individual Brand Colors */
 .social-icon-minimal.facebook {
   color: #1877f2;
 }
@@ -274,7 +268,6 @@ footer p {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Stagger animation delays */
 .social-icon-minimal:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -294,7 +287,6 @@ footer p {
   animation-delay: 0.6s;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   footer {
     padding: 30px 15px 15px;
