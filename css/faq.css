@@ -1,3 +1,7 @@
+.container h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
 @keyframes textBigger {
     0% {
         font-size: 1rem;
