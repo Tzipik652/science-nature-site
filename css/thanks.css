@@ -1,0 +1,18 @@
+.thank-you-message{
+    text-align: center;
+    margin-top: 50px;
+    color: #3EDCB1;
+}
+.thank-you-message a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3EDCB1;
+    color: #18192D;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.thank-you-message a:hover{
+    background-color: #36b89e;
+    color: white;
+}

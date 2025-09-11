@@ -1,0 +1,19 @@
+form{
+    align-items: center;
+    margin: auto;
+    width: 40%;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3EDCB1;
+}
+.btn{
+    width: 100%;
+    background-color: #3EDCB1;
+    color: #18192D;
+}
+.btn:hover{
+    background-color: #34b89e;
+    color: white;
+}
