@@ -9,6 +9,7 @@ The project emphasizes **UI/UX best practices**, interactive features, and clear
 - **Clickable Cards:** Each card links to external resources, with responsive layout.
 - **Media Gallery:** Image grid with Lightbox effect and embedded YouTube videos.
 - **FAQ Page:** Custom accordion for questions and answers.
+- **Trivia Quiz:** Interactive science & nature quiz with real-time scoring.
 - **Contact Form:** Validated form for name, email, and comments.
 - **Responsive Design:** Mobile-friendly with hamburger menu and smooth animations.
 
