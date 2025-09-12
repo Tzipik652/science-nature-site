@@ -1,28 +1,37 @@
 [class^="about-"] {
-    color: #ffffff;
-    padding: 0 20px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+.about-container {
+  margin: 2rem auto;
+  background-color: #1f2235;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .manager-img {
-  float: left; 
-  margin: 0 10px 10px 0; 
+  float: left;
+  margin: 0 10px 10px 0;
   width: 100px;
   height: auto;
 }
 .math-img {
-  float: right; 
-  margin: 0 0 10px 10px; 
+  float: right;
+  margin: 0 0 10px 10px;
   width: 300px;
   height: auto;
 }
-#readMoreBtn{
-    background-color: white;
-    color: #0b2545;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+#readMoreBtn {
+  background-color: white;
+  color: #0b2545;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 #readMoreBtn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
