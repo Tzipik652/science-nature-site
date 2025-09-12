@@ -39,12 +39,12 @@
 
 .answer-btn.correct {
   background-color: #3eddb1;
-  color: #18192d;
+  color: #192438;
 }
 
 .answer-btn.wrong {
   background-color: #e1306c;
-  color: #18192d;
+  color: #192438;
 }
 
 @keyframes correctAnimation {
@@ -85,17 +85,17 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  text-shadow: #18192D 1px 1px 2px;
+  text-shadow: #192438 1px 1px 2px;
   font-weight: bold;
   width: 100%;
   text-align: center;
   pointer-events: none;
 }
-#score{
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    color: #3eddb1;
+#score {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: #3eddb1;
 }
 .score {
   margin: 1.5rem auto;
@@ -105,8 +105,8 @@
   color: #3eddb1;
 }
 .restart-quiz {
-  background-color: #3EDCB1;
-  color: #18192D;
+  background-color: #3edcb1;
+  color: #192438;
   text-decoration: none;
   border: none;
 }

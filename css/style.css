@@ -12,13 +12,13 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #18192d;
+  background-color: #192438;
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #18192d;
+  background-color: #192438;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -87,7 +87,7 @@ header .logo p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    background: #18192d;
+    background: #192438;
   }
 
   .nav-menu.open {
@@ -124,16 +124,6 @@ footer::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-      circle at 20% 80%,
-      rgba(64, 224, 208, 0.05) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(32, 178, 170, 0.03) 0%,
-      transparent 50%
-    );
   pointer-events: none;
 }
 

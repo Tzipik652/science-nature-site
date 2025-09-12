@@ -1,24 +1,24 @@
-form{
-    align-items: center;
-    margin: auto;
-    width: 40%;
+form {
+  align-items: center;
+  margin: auto;
+  width: 40%;
 }
-form h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #3EDCB1;
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3edcb1;
 }
-.btn{
-    width: 100%;
-    background-color: #3EDCB1;
-    color: #18192D;
+.btn {
+  width: 100%;
+  background-color: #3edcb1;
+  color: #192438;
 }
-.btn:hover{
-    background-color: #34b89e;
-    color: white;
+.btn:hover {
+  background-color: #34b89e;
+  color: white;
 }
 @media (max-width: 768px) {
-    form{
-        width: 90%;
-    }
+  form {
+    width: 90%;
+  }
 }
